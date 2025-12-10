@@ -1,0 +1,75 @@
+$ g++ -std=c++17 -Iinclude src/*.cpp -o hangman && ./hangman
+=== Hangman (CLI) ===
+
+Word: ________
+Lives left: 6
+Guessed:
+Enter a letter: a
+No luck with 'a'.
+
+Word: ________
+Lives left: 5
+Guessed: a
+Enter a letter: o
+Nice! 'o' is in the word.
+
+Word: ____o___
+Lives left: 5
+Guessed: a o
+Enter a letter: r
+Nice! 'r' is in the word.
+
+Word: ___ro___
+Lives left: 5
+Guessed: a o r
+Enter a letter: c
+Nice! 'c' is in the word.
+
+Word: c__ro___
+Lives left: 5
+Guessed: a o r c
+Enter a letter: u
+Nice! 'u' is in the word.
+
+Word: cu_ro_u_
+Lives left: 5
+Guessed: a o r c u
+Enter a letter: s
+Nice! 's' is in the word.
+
+Word: cursor__
+Lives left: 5
+Guessed: a o r c u s
+Enter a letter: r
+No luck with 'r'.   # repeat ignored
+
+Word: cursor__
+Lives left: 5
+Guessed: a o r c u s
+Enter a letter: o
+No luck with 'o'.   # repeat ignored
+
+Word: cursor__
+Lives left: 5
+Guessed: a o r c u s
+Enter a letter: i
+No luck with 'i'.
+
+Word: cursor__
+Lives left: 4
+Guessed: a o r c u s i
+Enter a letter: t
+Nice! 't' is in the word.
+
+Word: cursort_
+Lives left: 4
+Guessed: a o r c u s i t
+Enter a letter: e
+Nice! 'e' is in the word.
+
+Word: cursorte
+Lives left: 4
+Guessed: a o r c u s i t e
+
+You won! The word was "cursor".
+
